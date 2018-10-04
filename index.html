@@ -7,15 +7,27 @@
   </head>
   <body>
     <h1>Sofia lär sig koda</h1>
-    <img src="http://files.builder.misssite.com/df/e1/dfe11d56-9aec-4fca-afaa-de9ac71104e1.jpg">
+    <img class="sofia" src="http://files.builder.misssite.com/df/e1/dfe11d56-9aec-4fca-afaa-de9ac71104e1.jpg">
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="Write something">
-        <br>
-        <input type=datetime-local>
       </div>
-      <button>Press here</button>
+      <button class="addOption">Add</button>
     </div>
-    <button>Button</button>
+    <div class="resultSection"></div>
+    <button>Go</button>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+        $('.inputs').append('<input placeholder="Write something else"></input>')
+        }
+
+        $('.addOption').click(add_option)
+
+      })
+    </script>
   </body>
 </html>

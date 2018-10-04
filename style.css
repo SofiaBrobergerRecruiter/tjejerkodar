@@ -6,6 +6,10 @@ body {
   margin-top: 80px;
 }
 
+.sofia:hover {
+  image-orientation: 90deg;
+}
+
 h1 {
 font: calibri;
 font-size: 50px;
